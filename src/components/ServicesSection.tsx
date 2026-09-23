@@ -1,7 +1,28 @@
 import React, { useState } from 'react';
-import { Check, AlertTriangle, ArrowRight, ShieldCheck, X } from 'lucide-react';
+import { 
+  Check, 
+  AlertTriangle, 
+  ArrowRight, 
+  ShieldCheck, 
+  X,
+  Home,
+  Wrench,
+  CloudLightning,
+  Building2,
+  SunMedium,
+  Wind
+} from 'lucide-react';
 import { SERVICES_DATA } from '../data/koebelData';
 import { ServiceItem } from '../types';
+
+const SERVICE_ICONS: Record<string, React.ReactNode> = {
+  'roof-replacements': <Home className="w-6 h-6 text-[#434c59]" />,
+  'roof-repairs': <Wrench className="w-6 h-6 text-[#434c59]" />,
+  'leak-repairs-storm-damage': <CloudLightning className="w-6 h-6 text-[#434c59]" />,
+  'new-roof-construction': <Building2 className="w-6 h-6 text-[#434c59]" />,
+  'skylights-sun-tunnels': <SunMedium className="w-6 h-6 text-[#434c59]" />,
+  'vents-gutters': <Wind className="w-6 h-6 text-[#434c59]" />,
+};
 
 interface ServicesSectionProps {
   onOpenConsultation: (service?: string) => void;
@@ -71,23 +92,19 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
               key={service.id}
               className="bg-white rounded-xl border border-stone-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col group"
             >
-              {/* Image Frame with fallback styling */}
+              {/* Authentic Work Photography Frame */}
               <div className="relative aspect-[16/10] bg-stone-100 overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.imageAlt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  referrerPolicy="no-referrer"
-                  onError={(e) => {
-                    // Graceful fallback to prevent broken image frame
-                    (e.target as HTMLElement).style.display = 'none';
-                  }}
                 />
-                <div className="absolute top-3 left-3 bg-[#1d232c]/85 text-stone-200 text-[11px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded backdrop-blur-sm">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+                <div className="absolute top-3 left-3 bg-[#1d232c]/85 text-stone-200 text-[11px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded backdrop-blur-sm shadow-xs">
                   {service.tag}
                 </div>
                 {service.certifications && (
-                  <div className="absolute top-3 right-3 bg-emerald-950/85 text-emerald-200 text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1">
+                  <div className="absolute top-3 right-3 bg-emerald-950/85 text-emerald-200 text-[11px] font-semibold px-2 py-0.5 rounded backdrop-blur-sm flex items-center gap-1 shadow-xs">
                     <ShieldCheck className="w-3 h-3 text-emerald-400" />
                     <span>{service.certifications[0]}</span>
                   </div>
@@ -184,12 +201,15 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenConsulta
             </div>
 
             <div className="p-6 space-y-6">
-              <div className="relative aspect-[16/9] rounded-lg overflow-hidden bg-stone-100">
+              <div className="relative aspect-[16/9] rounded-xl overflow-hidden bg-stone-100 border border-stone-200 shadow-sm">
                 <img
                   src={activeServiceModal.image}
                   alt={activeServiceModal.imageAlt}
                   className="w-full h-full object-cover"
                 />
+                <div className="absolute top-3 left-3 bg-[#1d232c]/85 text-stone-200 text-xs font-semibold px-3 py-1 rounded backdrop-blur-sm">
+                  {activeServiceModal.tag}
+                </div>
               </div>
 
               <div>

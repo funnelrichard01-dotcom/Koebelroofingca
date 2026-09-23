@@ -12,12 +12,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
       {/* Background Photography with measured gradient scrim */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_roofing_craft_1790182751312.jpg"
+          src="/assets/completed-roof-replacement.jpg"
           alt="Premium architectural roof replacement in Kitchener Waterloo"
           className="w-full h-full object-cover object-center opacity-30"
-          referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#171b22] via-[#1d232c]/90 to-[#222934]/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#171b22] via-[#1d232c]/90 to-[#222934]/85" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1d232c] via-transparent to-transparent" />
       </div>
 
@@ -140,7 +139,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
               {/* Founder quote banner */}
               <div className="pt-2 border-t border-white/10 flex items-center gap-3">
                 <img
-                  src="/public/assets/lloyd-koebel-portrait.jpg"
+                  src="/assets/lloyd-portrait.jpg"
                   alt="Lloyd Koebel, Founder of Koebel's Roofing"
                   className="w-12 h-12 rounded-full object-cover object-top border-2 border-[#efebe6]/40 shrink-0"
                 />
@@ -148,7 +147,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
                   <p className="text-stone-300 italic line-clamp-2">
                     "Every roof we install is treated as if it's protecting our own family."
                   </p>
-                  <p className="text-stone-400 font-semibold mt-1">
+                  <p className="text-stone-400 font-semibold mt-0.5">
                     — Lloyd Koebel, Founder
                   </p>
                 </div>

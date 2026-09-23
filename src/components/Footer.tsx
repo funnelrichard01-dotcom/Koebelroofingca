@@ -15,9 +15,12 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/assets/koebels-logo.png"
-                alt="Koebel's Roofing"
-                className="h-11 w-auto object-contain brightness-105"
+                src="/assets/kr-logo.png"
+                alt="Koebel's Roofing - K | R"
+                className="h-11 w-11 rounded-full object-cover border border-white/20 shadow-sm shrink-0"
+                onError={(e) => {
+                  (e.target as HTMLElement).style.display = 'none';
+                }}
               />
               <span className="text-xl font-bold tracking-tight text-[#efebe6]">
                 Koebel’s Roofing

@@ -56,8 +56,8 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Complete magnet-sweep clean-up around gardens & driveways",
       "Direct installation oversight by Lloyd Koebel"
     ],
-    image: "/src/assets/images/hero_roofing_craft_1790182751312.jpg",
-    imageAlt: "Premium architectural roof replacement in Kitchener-Waterloo",
+    image: "/assets/completed-roof-replacement.jpg",
+    imageAlt: "Completed architectural roof replacement in Kitchener-Waterloo",
     tag: "Core Specialty",
     certifications: ["Malarkey Certified"]
   },
@@ -81,7 +81,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Detailed photographic documentation of issue & repair",
       "Guaranteed watertight seal on all repaired zones"
     ],
-    image: "/src/assets/images/roof_inspection_repair_1790182776037.jpg",
+    image: "/assets/roof-repair-service.jpg",
     imageAlt: "Precision roof repair and flashing inspection",
     tag: "Rapid Response"
   },
@@ -105,7 +105,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Ice and water membrane integration",
       "Comprehensive structural moisture inspection"
     ],
-    image: "/public/assets/project-showcase.jpg",
+    image: "/assets/roof_inspection_repair_1790182776037.jpg",
     imageAlt: "Koebel's Roofing storm damage repair and completed residential project",
     tag: "Watertight Defense"
   },
@@ -128,7 +128,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Punctual scheduling respecting builder construction phases",
       "Comprehensive manufacturer warranty coverage"
     ],
-    image: "/public/assets/lloyd-craftsmanship.jpg",
+    image: "/assets/completed-shingle-detail.jpg",
     imageAlt: "Lloyd Koebel on-site coordinating new roof construction",
     tag: "Builder Partner"
   },
@@ -151,7 +151,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Integrated flashing kits custom engineered for Canadian weather",
       "Seamless indoor drywall and trim integration"
     ],
-    image: "/src/assets/images/skylight_natural_light_1790182765761.jpg",
+    image: "/assets/skylight_natural_light_1790182765761.jpg",
     imageAlt: "Natural light illuminating room via Velux skylight and sun tunnel",
     tag: "Velux Certified",
     certifications: ["Velux Certified"]
@@ -175,7 +175,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Attic baffles and ridge vent systems for continuous circulation",
       "Durable leaf guard options to minimize maintenance"
     ],
-    image: "/src/assets/images/hero_roofing_craft_1790182751312.jpg",
+    image: "/assets/lloyd-team-work.jpg",
     imageAlt: "Ridge vent and gutter installation on residential roof",
     tag: "Ventilation & Drainage"
   }
@@ -309,6 +309,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Lloyd Koebel",
     category: "Homeowner Roofing Guides",
     readTime: "4 min read",
+    image: "/assets/lloyd-inspection-truck.jpg",
     excerpt: "Hiring a roofer in Kitchener-Waterloo? Learn what to ask, what to avoid, and how to choose a roofing contractor you can trust. Koebel's Roofing shares expert tips.",
     content: [
       "Hiring a roofing contractor is one of the most critical decisions you will make for your home. Your roof protects your largest investment and your family inside it.",
@@ -327,6 +328,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Lloyd Koebel",
     category: "Roof Repair & Replacement Advice",
     readTime: "3 min read",
+    image: "/assets/roof-repair-service.jpg",
     excerpt: "Not sure if you should repair or replace your roof? Discover expert advice from Koebel's Roofing in Kitchener-Waterloo. Free inspections.",
     content: [
       "When a leak appears or shingles blow off in a windstorm, homeowners immediately ask: Can this simply be repaired, or do I need an entire replacement?",
@@ -343,6 +345,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Lloyd Koebel",
     category: "Roof Installation Process",
     readTime: "5 min read",
+    image: "/assets/lloyd-craftsman-ladder.jpg",
     excerpt: "Wondering what happens during a roof installation? Koebel's Roofing walks you through the step-by-step process, from inspection to cleanup. Serving Kitchener-Waterloo with care, clarity, and craftsmanship.",
     content: [
       "Replacing your roof is a major project, but with the right team and clear expectations, it doesn't have to be overwhelming.",
@@ -359,6 +362,7 @@ export const BLOG_POSTS: BlogPost[] = [
     author: "Lloyd Koebel",
     category: "Roofing Tips & Advice",
     readTime: "4 min read",
+    image: "/assets/completed-roof-replacement.jpg",
     excerpt: "Is your roof trying to tell you something? Discover the top signs it's time for a replacement—straight from Koebel's Roofing, trusted roofing contractors in Kitchener-Waterloo.",
     content: [
       "Roofs often give subtle warning signals long before water drips onto your living room floor.",

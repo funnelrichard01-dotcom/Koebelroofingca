@@ -11,16 +11,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenConsultation }
     <section id="about" className="py-20 bg-stone-50 border-b border-stone-200">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
-          {/* Visual Gallery with Authentic Lloyd Koebel Photography */}
+          {/* Visual Gallery with Authentic Lloyd Koebel Photography & Credentials */}
           <div className="lg:col-span-6 space-y-4">
             <div className="relative rounded-2xl overflow-hidden shadow-lg border border-stone-200 aspect-[4/3] bg-stone-100">
               <img
-                src="/public/assets/lloyd-koebel-portrait.jpg"
-                alt="Lloyd Koebel, Founder and Lead Roofer of Koebel's Roofing"
+                src="/assets/lloyd-portrait.jpg"
+                alt="Lloyd Koebel, Founder and Master Roofer of Koebel's Roofing"
                 className="w-full h-full object-cover object-top"
-                referrerPolicy="no-referrer"
               />
-              <div className="absolute bottom-4 left-4 right-4 p-3 bg-[#1d232c]/90 backdrop-blur-md rounded-lg text-white border border-white/10 flex items-center justify-between">
+              <div className="absolute bottom-4 left-4 right-4 p-3.5 bg-[#1d232c]/90 backdrop-blur-md rounded-xl text-white border border-white/10 flex items-center justify-between shadow-lg">
                 <div>
                   <div className="text-sm font-bold text-[#efebe6]">Lloyd Koebel</div>
                   <div className="text-xs text-stone-300">Founder &amp; Master Craftsperson</div>
@@ -35,13 +34,12 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenConsultation }
             <div className="grid grid-cols-2 gap-4">
               <div className="relative rounded-xl overflow-hidden border border-stone-200 aspect-[4/3] bg-stone-100 shadow-sm">
                 <img
-                  src="/public/assets/lloyd-craftsmanship.jpg"
-                  alt="Lloyd Koebel inspecting roofing work on-site"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  src="/assets/lloyd-on-roof.jpg"
+                  alt="Lloyd Koebel installing and inspecting roofing work on-site"
+                  className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
-                  <span className="text-[11px] font-medium text-stone-200">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                  <span className="text-[11px] font-semibold text-white drop-shadow-sm">
                     On-Site Quality Assurance
                   </span>
                 </div>
@@ -49,16 +47,31 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenConsultation }
 
               <div className="relative rounded-xl overflow-hidden border border-stone-200 aspect-[4/3] bg-stone-100 shadow-sm">
                 <img
-                  src="/public/assets/project-showcase.jpg"
-                  alt="Completed residential roofing project in Waterloo Region"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
+                  src="/assets/completed-roof-replacement.jpg"
+                  alt="Completed residential roof replacement in Waterloo Region"
+                  className="w-full h-full object-cover object-center"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
-                  <span className="text-[11px] font-medium text-stone-200">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                  <span className="text-[11px] font-semibold text-white drop-shadow-sm">
                     Kitchener-Waterloo Homes
                   </span>
                 </div>
+              </div>
+            </div>
+
+            {/* Quick Credentials Bar */}
+            <div className="grid grid-cols-3 gap-2.5 pt-2">
+              <div className="p-3 bg-white rounded-lg border border-stone-200 text-center">
+                <div className="text-lg font-extrabold text-[#434c59]">Since 2014</div>
+                <div className="text-[10px] text-neutral-500 font-medium">KW Community</div>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-stone-200 text-center">
+                <div className="text-lg font-extrabold text-amber-500">5.0 ★</div>
+                <div className="text-[10px] text-neutral-500 font-medium">98 Google Reviews</div>
+              </div>
+              <div className="p-3 bg-white rounded-lg border border-stone-200 text-center">
+                <div className="text-lg font-extrabold text-emerald-600">100%</div>
+                <div className="text-[10px] text-neutral-500 font-medium">Magnet Clean Sweep</div>
               </div>
             </div>
           </div>

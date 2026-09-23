@@ -44,9 +44,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
             className="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-300 rounded"
           >
             <img
-              src="/assets/koebels-logo.png"
-              alt="Koebel's Roofing"
-              className="h-12 w-auto object-contain brightness-105"
+              src="/assets/kr-logo.png"
+              alt="Koebel's Roofing - K | R"
+              className="h-11 w-11 rounded-full object-cover border border-white/20 shadow-sm shrink-0"
+              onError={(e) => {
+                // Fallback to text initials if image fails
+                (e.target as HTMLElement).style.display = 'none';
+              }}
             />
             <div className="flex flex-col">
               <span className="text-xl sm:text-2xl font-bold tracking-tight text-[#efebe6] group-hover:text-white transition-colors">
