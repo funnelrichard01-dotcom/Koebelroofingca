@@ -1,0 +1,8 @@
+{
+  "name": "Koebel's Roofing - Premium Roofing Solutions",
+  "description": "Protecting homes with integrity across Kitchener, Waterloo, and surrounding communities since 2014. Roof replacements, repairs, skylights, and sun tunnels.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
