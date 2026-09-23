@@ -17,7 +17,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
               <img
                 src="/assets/kr-logo.png"
                 alt="Koebel's Roofing - K | R"
-                className="h-11 w-11 rounded-full object-cover border border-white/20 shadow-sm shrink-0"
+                className="h-12 w-12 rounded-full object-cover border border-white/25 shadow-md ring-1 ring-white/10 shrink-0"
                 onError={(e) => {
                   (e.target as HTMLElement).style.display = 'none';
                 }}
